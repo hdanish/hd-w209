@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- bg src img: http://blog.edinchavez.com/wp-content/uploads/2013/04/20130308-DSC_9793_4_5.jpg -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>W209 Project - Movies</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">It's showtime!</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="#intro">Introduction</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#fans">Moviegoers</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#media">Marketers</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#studio">Studio Execs</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#team">Team</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <!-- <div class="intro-lead-in">Welcome to our presentation...</div> -->
+                <div class="intro-heading">Let's talk movie ratings</div>
+                <a href="#intro" class="page-scroll btn btn-xl">Show me the money!</a>
+            </div>
+        </div>
+    </header>
+	
+	<!-- Intro Section -->
+    <section id="intro" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Introduction</h2>
+                </div>
+            </div>
+            
+            <div class="row text-center">
+                <br />
+                <p class="text-muted">In the context of the W209 - Data Visualization and Communication class at the MIDS program from UC Berkeley, our group has focused on visualizing information about movie ratings. The general concept is to analyze movie ratings from different perspectives. For example, we hoped to answer questions such as: How do ratings vary by genre? How do rating patterns vary by demographics? How do they vary by geography? We hope that this presentation can reach a broad audience including curious movie fans, advertisers and media consultants, as well as studio executives.<br /><br /></p>
+				<p class="text-muted">The dataset used for this project comes from MovieLens (http://grouplens.org/datasets/movielens/). It includes slightly over 20 million ratings from 138493 users across 27278 movies. Ratings are timestamped and are on a scale from 1 to 5. The information in the ratings includes movie titles, release dates, genres, as well as user information such as age, gender, occupation and zip code. The dataset was compiled in March 2015 so information pertaining to newer movies since that time is not included. Tableau is the principal tool used to create the visualizations.<br /><br /></p>
+            </div>
+			<div class="row text-center">
+				<ol class="list-group">
+					<li class="list-group-item">
+						<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, aliquid.</p>
+					</li>
+					<li class="list-group-item">
+						<p class="text-muted">Quos nostrum provident ex quisquam aliquid, hic odio repellendus atque.</p>
+					</li>
+					<li class="list-group-item">
+						<p class="text-muted">Facilis, id dolorum distinctio, harum accusantium atque explicabo quidem consectetur.</p>
+					</li>
+				</ol>
+                <br />
+			</div>
+		</div>
+    </section>
+
+    <!-- Moviegoers Section -->
+    <section id="fans">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-justify">
+                    <h2 class="section-heading">Moviegoer Dashboards</h2>
+                    <p class="text-muted">This section presents summary level information about the ratings dataset. In particular it touches on the top movies and the distribution across genres. The visualizations here are intended for all moviegoers to get an idea of the top movies and genres. When calculating the top movies, a function of the average rating and the number of ratings is used. This is done in order to prevent movies with very few ratings from taking over the top spots.</p>
+                </div>
+            </div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 1004px; height: 869px;'><noscript><a href='#'><img alt='Top Movies ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;20&#47;209_Project&#47;TopN&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='1004' height='869' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='209_Project&#47;TopN' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;20&#47;209_Project&#47;TopN&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showTabs' value='y' /></object></div>
+						<script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 1004px; height: 869px;'><noscript><a href='#'><img alt='Genre Insights ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;ProjectMovies-Dashboard2&#47;Genre&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='1004' height='869' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='ProjectMovies-Dashboard2&#47;Genre' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;ProjectMovies-Dashboard2&#47;Genre&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showTabs' value='y' /></object></div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </section>
+	
+	<!-- M&M Section -->
+    <section id="media" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Marketer Dashboards</h2>
+                    <p class="text-muted">This section presents ratings information broken down by different demographics. It is primarily intended for media consultants and marketers to be able to identify key demographics that they may which to target.</p>
+                </div>
+            </div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 1004px; height: 869px;'><noscript><a href='#'><img alt='First ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Vi&#47;View3&#47;First&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='1004' height='869' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='View3&#47;First' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Vi&#47;View3&#47;First&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showTabs' value='y' /></object></div>
+						<script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 1004px; height: 869px;'><noscript><a href='#'><img alt='Media Marketer ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;AV&#47;AVTableauWB_Apr19&#47;MediaMarketer&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='1004' height='869' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='AVTableauWB_Apr19&#47;MediaMarketer' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;AV&#47;AVTableauWB_Apr19&#47;MediaMarketer&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showTabs' value='y' /></object></div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </section>
+	
+	<!-- Studio exec Section -->
+    <section id="studio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Studio Exec Dashboards</h2>
+                    <p class="text-muted">This section presents overall ratings information for genres and by geographic breakdown in the USA. It is primarily intended for studio executives so that they can know who is watching which movies, and where are the viewers mostly located.</p>
+                </div>
+            </div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 1004px; height: 869px;'><noscript><a href='#'><img alt='Third ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Vi&#47;View4&#47;Third&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='1004' height='869' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='View4&#47;Third' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Vi&#47;View4&#47;Third&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showTabs' value='y' /></object></div>
+						<script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 1004px; height: 869px;'><noscript><a href='#'><img alt='Studio Executive ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;AV&#47;AVTableauWB_Apr19&#47;StudioExecutive&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='1004' height='869' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='AVTableauWB_Apr19&#47;StudioExecutive' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;AV&#47;AVTableauWB_Apr19&#47;StudioExecutive&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showTabs' value='y' /></object></div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Our Team</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/hd.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Hussein Danish</h4>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="https://ca.linkedin.com/in/hussein-danish-57089329"><i class="fa fa-linkedin"></i></a>
+                            </li>
+							<li><a href="https://github.com/hdanish"><i class="fa fa-github"></i></a>
+                            </li>
+                            <li><a href="mailto:hdanish@ischool.berkeley.edu"><i class="fa fa-envelope"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/jasmine.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Aruna Vallurupalli</h4>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="https://www.linkedin.com/in/arunavallurupalli"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li><a href="mailto:aruna.vallur@ischool.berkeley.edu"><i class="fa fa-envelope"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/minion.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Shruti van Hemmen</h4>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="https://www.linkedin.com/in/svanhemmen"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li><a href="mailto:sdvh@ischool.berkeley.edu"><i class="fa fa-envelope"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <p class="large text-muted">Project for <a href="http://www.ischool.berkeley.edu/courses/datasci209">Data Science W209</a>, Spring 2016, <a href="https://datascience.berkeley.edu/">MIDS program</a>, <a href="http://www.ischool.berkeley.edu/">UC Berkeley School of Information</a></p>
+					<p class="text-muted">Website Template: <a href="http://startbootstrap.com/template-overviews/agency/">Agency</a> by <a href="http://startbootstrap.com/">Start Bootstrap</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
+
+</body>
+
+</html>
